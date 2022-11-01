@@ -1,10 +1,11 @@
 import React, { FC, useCallback } from 'react';
-import { BaseButton } from '@components/base/BaseButton';
-import { BaseTooltip } from '@components/base/BaseTooltip';
-import { BaseUiKitIcon } from '@components/base/BaseUiKitIcon';
 import cn from 'classnames';
 
 import { OrderDirectionType } from '../../../types';
+
+import { BaseButton } from '../../base/BaseButton';
+import { BaseTooltip } from '../../base/BaseTooltip';
+import { BaseUiKitIcon } from '../../base/BaseUiKitIcon';
 
 import c from './sortIndicator.module.scss';
 

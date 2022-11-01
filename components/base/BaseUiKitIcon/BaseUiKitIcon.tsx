@@ -3,10 +3,10 @@ import cn from 'classnames';
 
 import c from './baseUiKitIcon.module.scss';
 
-export type BaseIconName = 'sortTitleArrow11x20' | 'questionMark';
+type BaseUiKitIconName = 'sortTitleArrow11x20' | 'questionMark';
 
 interface IProps {
-    name: BaseIconName;
+    name: BaseUiKitIconName;
     width?: number;
     height?: number;
     currentColor?: boolean;
@@ -22,7 +22,7 @@ const BaseUiKitIcon: FC<IProps> = ({
 }) => {
     const Icon = useMemo(
         // eslint-disable-next-line @typescript-eslint/no-var-requires
-        () => require(`@assets/icons/${name}.svg`).default,
+        () => require(`../../../assets/icons/${name}.svg`).default,
         [name],
     );
 

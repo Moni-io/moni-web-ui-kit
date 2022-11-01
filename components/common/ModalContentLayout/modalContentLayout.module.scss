@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    border-radius: 16px;
+    background-color: rgb(var(--backgroundPrimary));
+    margin: 5vh 0;
+}
+
+.closeContainer {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(var(--uiPlaceM));
+    fill: rgb(var(--additionalPrimary));
+    z-index: 1;
+}

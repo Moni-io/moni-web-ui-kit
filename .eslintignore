@@ -1,0 +1,11 @@
+dist/
+*.d.ts
+node_modules
+build
+.next
+jest/
+jest.config.js
+next.config.js
+next.config.wizardcopy.js
+sentry.client.config.js
+sentry.server.config.js

@@ -1,0 +1,17 @@
+{
+  "extends": "stylelint-config-moni-web",
+  "ignoreFiles": [
+    "**/*.woff",
+    "**/*.svg",
+    "**/*.png",
+    "**/*.jpg",
+    "**/*.jpeg",
+    "**/*.yaml",
+    "**/*.pdf",
+    "**/*.json",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}

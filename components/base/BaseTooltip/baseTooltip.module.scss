@@ -1,0 +1,56 @@
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.tooltipContainer {
+    position: absolute;
+    padding: 4px;
+    z-index: $z-index-super;
+
+    &.tooltipHidden {
+        display: none;
+    }
+}
+
+.tooltip {
+    padding: 8px;
+    border-radius: 12px;
+    background-color: rgb(var(--primaryMainB));
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    color: rgb(var(--primaryMainA));
+    border: 1px solid rgb(var(--uiBorder));
+    width: max-content;
+}
+
+.top {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.text {
+    display: block;
+    position: relative;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.container.hover {
+    .tooltipContainer {
+        display: none;
+    }
+
+    &:hover {
+        .tooltipContainer {
+            display: block;
+        }
+    }
+}

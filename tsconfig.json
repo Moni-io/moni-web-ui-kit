@@ -16,7 +16,26 @@
     "lib": ["dom", "es2017"],
     "skipLibCheck": true,
     "stripInternal": true,
-    "declaration": true
+    "paths": {
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@types/*": [
+        "src/types/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
+    }
   },
   "exclude": ["node_modules", "lib", "es"]
 }

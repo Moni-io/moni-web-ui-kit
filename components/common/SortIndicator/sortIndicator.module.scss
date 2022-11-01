@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    color: rgb(var(--additionalSecondary));
+    transition: color 0.5s, fill 0.5s, background-color 0.5s;
+    border-radius: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.arrowDown,
+.arrowUp {
+    margin-right: 2px;
+}
+
+.arrowUp {
+    transform: rotate(180deg);
+}
+
+.tooltipContainer {
+    width: max-content;
+    height: 18px;
+    fill: rgb(var(--additionalOptional));
+    transition: 0.5s fill;
+
+    &:hover {
+        fill: rgb(var(--additionalPrimary));
+    }
+}
+
+.tooltip {
+    max-width: 300px;
+}
+
+.container {
+    &:hover {
+        background-color: rgb(var(--uiPlaceM));
+        color: rgb(var(--primaryMoni));
+    }
+
+    &.selected {
+        color: rgb(var(--additionalPrimary));
+        fill: rgb(var(--additionalPrimary));
+
+        &:hover {
+            color: rgb(var(--primaryMoni));
+            fill: rgb(var(--primaryMoni));
+        }
+    }
+
+    &[disabled] {
+        cursor: initial;
+
+        &:hover {
+            color: rgb(var(--additionalSecondary));
+            background-color: initial;
+        }
+    }
+}

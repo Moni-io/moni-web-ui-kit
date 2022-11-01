@@ -4,3 +4,4 @@ export * from './types';
 
 export * from './utils/presenters';
 export * from './utils/views';
+export * from './utils/repositories';

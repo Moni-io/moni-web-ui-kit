@@ -1,2 +1,2 @@
 export { useClickOutside } from './useClickOutside';
-export { useClickOutsidee } from './useClickOutsidee';
+export { useUpdateEffect } from './useUpdateEffect';

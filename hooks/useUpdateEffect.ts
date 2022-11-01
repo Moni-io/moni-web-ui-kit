@@ -1,6 +1,6 @@
 import { DependencyList, EffectCallback, useEffect, useRef } from 'react';
 
-const useUpdateEffect = (
+export const useUpdateEffect = (
     effect: EffectCallback,
     dependencies: DependencyList = [],
 ): void => {
@@ -15,5 +15,3 @@ const useUpdateEffect = (
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, dependencies);
 };
-
-export default useUpdateEffect;

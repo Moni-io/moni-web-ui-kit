@@ -2,6 +2,6 @@ export type {
     IRepositoryResponse,
     IPaginationPayload,
     IPagination,
-} from './repository/interfaces';
-export { RepositoryResultStatus } from './repository/enums';
+} from './repositories/interfaces';
+export { RepositoryResultStatus } from './repositories/enums';
 export { OrderDirectionType } from './entities/enums';

@@ -18,7 +18,7 @@ const BaseLink: FC<IProps> = ({
     children,
 }) => {
     return (
-        <Link href={href} passHref>
+        <Link href={href} passHref legacyBehavior>
             <a
                 target={target}
                 className={className}

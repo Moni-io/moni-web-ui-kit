@@ -1,0 +1,7 @@
+.container {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container:not(:first-child) {
+    border-top: 1px solid rgb(var(--uiBorder));
+}

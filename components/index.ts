@@ -1,6 +1,5 @@
 export { BaseButton } from './base/BaseButton';
 export { BaseLoader } from './base/BaseLoader';
-export { BaseUiKitIcon } from './base/BaseUiKitIcon';
 export { BaseTooltip } from './base/BaseTooltip';
 export { BaseLink } from './base/BaseLink';
 export { BaseChangeableValue } from './base/BaseChangeableValue';

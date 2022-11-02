@@ -3,9 +3,12 @@ import cn from 'classnames';
 
 import { OrderDirectionType } from '../../../types';
 
+import {
+    QuestionMark20x20Icon,
+    SortTitleArrow11x20Icon,
+} from '../../../assets';
 import { BaseButton } from '../../base/BaseButton';
 import { BaseTooltip } from '../../base/BaseTooltip';
-import { BaseUiKitIcon } from '../../base/BaseUiKitIcon';
 
 import c from './sortIndicator.module.scss';
 
@@ -43,8 +46,7 @@ const SortIndicator: FC<IProps> = ({
             })}
         >
             {!disabled && value !== undefined && (
-                <BaseUiKitIcon
-                    name={'sortTitleArrow11x20'}
+                <SortTitleArrow11x20Icon
                     width={11}
                     className={
                         value === OrderDirectionType.Asc
@@ -62,7 +64,7 @@ const SortIndicator: FC<IProps> = ({
                     containerClassName={c.tooltipContainer}
                     tooltipClassName={c.tooltip}
                 >
-                    <BaseUiKitIcon name={'questionMark'} width={18} />
+                    <QuestionMark20x20Icon width={18} />
                 </BaseTooltip>
             )}
         </BaseButton>

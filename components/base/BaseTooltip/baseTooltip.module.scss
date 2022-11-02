@@ -6,7 +6,7 @@
 .tooltipContainer {
     position: absolute;
     padding: 4px;
-    z-index: $z-index-super;
+    z-index: 3;
 
     &.tooltipHidden {
         display: none;

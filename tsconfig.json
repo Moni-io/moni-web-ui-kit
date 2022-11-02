@@ -13,8 +13,12 @@
     "noUnusedLocals": true,
     "noImplicitAny": true,
     "target": "es6",
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "skipLibCheck": true,
-    "stripInternal": true,
+    "stripInternal": true
+  },
   "exclude": ["node_modules", "lib", "es"]
 }

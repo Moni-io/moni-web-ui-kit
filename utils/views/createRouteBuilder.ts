@@ -2,7 +2,7 @@ export const createRouteBuilder = <
     R extends string,
     RQ extends Record<R, unknown>,
 >() => {
-    return function buildRoute(
+    return function (
         url: R,
         query: RQ[R] | undefined,
     ): { pathname: string; query: Partial<RQ[R]> } {

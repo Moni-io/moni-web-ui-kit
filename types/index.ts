@@ -5,6 +5,6 @@ export type {
 } from './repositories/interfaces';
 export { RepositoryResultStatus } from './repositories/enums';
 
-export { IResettablePresenter } from './presenters/interfaces';
+export type { IResettablePresenter } from './presenters/interfaces';
 
 export { OrderDirectionType } from './entities/enums';

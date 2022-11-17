@@ -14,6 +14,7 @@ interface IProps extends PropsWithChildren {
     type?: 'submit' | 'button' | 'reset';
     disabled?: boolean;
     onClick?: () => void | Promise<void>;
+    capture?: string;
     className?: string;
     style?: CSSProperties;
     stopPropagation?: boolean;
@@ -25,6 +26,7 @@ const BaseButton: FC<IProps> = ({
     type = 'button',
     disabled,
     onClick,
+    capture,
     children,
     className,
     stopPropagation,
@@ -53,7 +55,8 @@ const BaseButton: FC<IProps> = ({
     return (
         <button
             type={type}
-            onClick={handleClick}
+            onClick={capture ? undefined : handleClick}
+            onClickCapture={capture ? handleClick : undefined}
             className={cn(c.container, className)}
             style={style}
             disabled={disabled}

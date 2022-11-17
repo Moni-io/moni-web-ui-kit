@@ -1,8 +1,9 @@
 {
   "name": "moni-web-ui-kit",
-  "version": "1.0.48",
+  "version": "1.0.49",
   "description": "",
   "main": "index.ts",
+  "repository": "https://github.com/Moni-io/moni-web-ui-kit",
   "keywords": [],
   "author": "",
   "license": "MIT",

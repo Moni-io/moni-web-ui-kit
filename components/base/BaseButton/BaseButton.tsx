@@ -14,7 +14,7 @@ interface IProps extends PropsWithChildren {
     type?: 'submit' | 'button' | 'reset';
     disabled?: boolean;
     onClick?: () => void | Promise<void>;
-    capture?: string;
+    capture?: boolean;
     className?: string;
     style?: CSSProperties;
     stopPropagation?: boolean;

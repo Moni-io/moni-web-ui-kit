@@ -10,7 +10,7 @@ yarn add moni-web-ui-kit
 ```
 
 
-For using the library, you have to transpile files inside your project, for example using Next.js you can use `next-transpile-modules` package
+For using the library, you have to transpile files inside your project, for example `next-transpile-modules` package
 
 Add to next.config.js
 ```js

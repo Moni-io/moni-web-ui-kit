@@ -14,7 +14,7 @@ import c from './sortIndicator.module.scss';
 
 interface IProps {
     value: OrderDirectionType | undefined;
-    name: string;
+    name: string | JSX.Element;
     onSortChange: (value: OrderDirectionType) => void;
     tooltipText?: string;
     selected?: boolean;

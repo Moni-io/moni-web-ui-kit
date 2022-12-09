@@ -27,111 +27,49 @@
 .largeTitle1Font {
     font-size: 30px;
     line-height: 1.2;
-    letter-spacing: -0.2px;
-
-    &.mediumWeight,
-    &.boldWeight,
-    &.extraBoldWeight,
-    &.blackWeight,
-    &.semiBoldWeight {
-        letter-spacing: 0;
-    }
+    letter-spacing: -1px;
 }
 
 .largeTitle2Font {
     font-size: 28px;
     line-height: 1.36;
-    letter-spacing: -0.16px;
-
-    &.boldWeight {
-        letter-spacing: -0.21px;
-    }
-
-    &.mediumWeight,
-    &.extraBoldWeight,
-    &.blackWeight,
-    &.semiBoldWeight {
-        letter-spacing: 0;
-    }
+    letter-spacing: -0.5px;
 }
 
 .largeTitle3Font {
     font-size: 24px;
     line-height: 1.25;
-    letter-spacing: 0.22px;
-
-    &.mediumWeight,
-    &.boldWeight,
-    &.extraBoldWeight,
-    &.blackWeight,
-    &.semiBoldWeight {
-        letter-spacing: -0.2px;
-    }
+    letter-spacing: -0.5px;
 }
 
 .headline1Font {
     font-size: 22px;
     line-height: 1.3;
-    letter-spacing: 0.22px;
-
-    &.mediumWeight,
-    &.boldWeight,
-    &.extraBoldWeight,
-    &.blackWeight,
-    &.semiBoldWeight {
-        letter-spacing: -0.2px;
-    }
+    letter-spacing: -0.5px;
 }
 
 .headline2Font {
     font-size: 20px;
     line-height: 1.3;
-    letter-spacing: 0.22px;
-
-    &.mediumWeight,
-    &.boldWeight,
-    &.extraBoldWeight,
-    &.blackWeight,
-    &.semiBoldWeight {
-        letter-spacing: 0.35px;
-    }
+    letter-spacing: -0.25px;
 }
 
 .titleFont {
     font-size: 17px;
     line-height: 1.41;
-    letter-spacing: 0.41px;
-
-    &.mediumWeight {
-        letter-spacing: 0.34px;
-    }
-
-    &.boldWeight,
-    &.extraBoldWeight,
-    &.blackWeight,
-    &.semiBoldWeight {
-        letter-spacing: 0.21px;
-    }
+    letter-spacing: -0.5px;
 }
 
 .bodyFont {
     font-size: 15px;
     line-height: 1.47;
-    letter-spacing: 0.24px;
-
-    &.mediumWeight {
-        line-height: 18px;
-    }
+    letter-spacing: -0.2px;
 }
 
 .footnoteFont {
     font-size: 13px;
     line-height: 20px;
-    letter-spacing: 0.3px;
-
-    &.extraBoldWeight {
-        letter-spacing: 0.2px;
-    }
+    letter-spacing: 0;
 }
 
 .captionFont {

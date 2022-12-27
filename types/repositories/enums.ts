@@ -6,6 +6,7 @@ export enum RepositoryResultStatus {
     NotFound = 404,
     Conflict = 409,
     DataTooLarge = 413,
+    ExpectationFailed = 417,
     UnprocessableEntity = 422,
     NotDocumentedError = 500,
     GatewayTimeout = 504,

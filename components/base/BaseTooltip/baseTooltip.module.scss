@@ -49,7 +49,7 @@
     }
 
     &:hover {
-        .tooltipContainer {
+        .tooltipContainer:not(.tooltipHidden) {
             display: block;
         }
     }

@@ -7,6 +7,7 @@ interface IProps extends PropsWithChildren {
     text: string | JSX.Element;
     hover?: boolean;
     position?: 'top' | 'bottom';
+    verticalPosition?: 'left' | 'right' | 'center';
     tooltipClassName?: string;
     containerClassName?: string;
 }
@@ -15,6 +16,7 @@ const BaseTooltip: FC<IProps> = ({
     children,
     text,
     position = 'top',
+    verticalPosition = 'center',
     hover,
     tooltipClassName,
     containerClassName,
@@ -28,9 +30,14 @@ const BaseTooltip: FC<IProps> = ({
             )}
         >
             <div
-                className={cn(c.tooltipContainer, c[position], {
-                    [c.tooltipHidden]: !text,
-                })}
+                className={cn(
+                    c.tooltipContainer,
+                    c[position],
+                    c[verticalPosition],
+                    {
+                        [c.tooltipHidden]: !text,
+                    },
+                )}
             >
                 <div className={cn(c.tooltip, tooltipClassName)}>
                     <span className={cn('footnoteFont', c.text)}>{text}</span>

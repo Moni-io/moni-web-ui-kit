@@ -25,6 +25,7 @@
 
 .top {
     top: 0;
+    transform: translateY(-100%);
 
     &.center {
         transform: translate(-50%, -100%);
@@ -33,6 +34,7 @@
 
 .bottom {
     bottom: 0;
+    transform: translateY(100%);
 
     &.center {
         transform: translate(-50%, 100%);

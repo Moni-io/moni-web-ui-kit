@@ -14,11 +14,11 @@
 }
 
 .tooltip {
-    padding: 8px;
-    border-radius: 12px;
-    background-color: rgb(var(--primaryMainB));
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-    color: rgb(var(--primaryMainA));
+    padding: 12px;
+    border-radius: 16px;
+    background-color: rgb(var(--uiPlaceG));
+    box-shadow: 0 8px 16px 0 rgba(28, 12, 73, 0.08);
+    color: rgb(var(--additionalPrimary));
     border: 1px solid rgb(var(--uiBorder));
     width: max-content;
 }

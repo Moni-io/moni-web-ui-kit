@@ -40,7 +40,7 @@ const BaseTooltip: FC<IProps> = ({
                 )}
             >
                 <div className={cn(c.tooltip, tooltipClassName)}>
-                    <span className={cn('footnoteFont', c.text)}>{text}</span>
+                    <span className={cn('captionFont', c.text)}>{text}</span>
                 </div>
             </div>
 

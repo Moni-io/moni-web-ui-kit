@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC } from 'react';
+import React, { FC } from 'react';
 
 import { IModalConfig } from '../../../utils/presenters';
 import { BaseModal } from '../../base/BaseModal';
@@ -12,7 +12,6 @@ interface IProps {
     content: ContentType | null;
     payload: Record<string, any> | null | undefined;
     onClose: () => void;
-    style?: CSSProperties;
 }
 
 const ModalContentHandler: FC<IProps> = ({
@@ -21,7 +20,6 @@ const ModalContentHandler: FC<IProps> = ({
     payload,
     onClose,
     contentMap,
-    style,
 }) => {
     const Content = content ? contentMap[content] : null;
 
@@ -30,10 +28,7 @@ const ModalContentHandler: FC<IProps> = ({
             onClose={config.closeOnclickOutside ? onClose : undefined}
             alignTop={config.alignTop}
         >
-            <ModalContentLayout
-                style={style}
-                onClose={config.cross ? onClose : undefined}
-            >
+            <ModalContentLayout onClose={config.cross ? onClose : undefined}>
                 {Content && payload !== null && (
                     <Content payload={payload} onClose={onClose} />
                 )}

@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 interface IProps extends PropsWithChildren {
     href: string | UrlObject;
+    onClick?: () => void;
     stopPropagation?: boolean;
     target?: HTMLAttributeAnchorTarget;
     className?: string;
@@ -12,6 +13,7 @@ interface IProps extends PropsWithChildren {
 
 const BaseLink: FC<IProps> = ({
     href,
+    onClick,
     target = '_self',
     stopPropagation,
     className,
@@ -22,7 +24,10 @@ const BaseLink: FC<IProps> = ({
             <a
                 target={target}
                 className={className}
-                onClick={(e) => (stopPropagation ? e.stopPropagation() : null)}
+                onClick={(e) => {
+                    stopPropagation ? e.stopPropagation() : null;
+                    onClick ? onClick() : null;
+                }}
             >
                 {children}
             </a>

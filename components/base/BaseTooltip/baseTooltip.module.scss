@@ -66,9 +66,7 @@
         display: none;
     }
 
-    &:hover {
-        .tooltipContainer:not(.tooltipHidden) {
-            display: block;
-        }
+    &:hover > .tooltipContainer:not(.tooltipHidden) {
+        display: block;
     }
 }
